@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: tahoma;
+}
+
+html, body{
+  height: 100%;
+  
+}
+body{
+  background-color: white;
+  position: absolute;
+}
+
+main{
+
+  height: auto;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  padding-bottom: 80px;
+  padding-top: 170px;
+  clear: both;
+}
+main h2, main h3{
+  text-align: center;
+  margin: 3px auto;
+}
+main section {
+  width: 90%;
+  height: 420px;
+  border-top:1px dashed #999;
+  border-bottom:1px dashed #999;
+  margin: 10px auto 35px auto!important;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  
+  
+
+}
+main section img{
+  margin: 40px 0px 40px 40px;
+  max-height: 90%;
+  max-width: 98%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px #000;
+  flex: 1;
+  border-right:1px dashed #999;
+  border-radius: 15px 15px 15px 15px;
+  
+}
+main section img:hover{
+  transition: all;
+  transition-delay: 100ms;
+  transition-duration: 500ms;
+  transform: scale(1.2,1.2);
+  z-index: 10;
+
+}
+
+main section p{
+  flex: 1;
+  text-align: justify;
+  padding: 50px 25px 80px 5px!important;
+  border-right:1px dashed #999;
+  
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+main p {
+  text-align: center;
+  color: black;
+}
+
+i{
+  float: left;
+  margin: 15px;
+  width: 20px;
+}
+.fa-facebook{
+  color: rgb(49, 61, 238);
+}
+.fa-instagram{
+  color: rgb(187, 9, 54);
+}
+.fa-youtube{
+  color: red;
+  
+}

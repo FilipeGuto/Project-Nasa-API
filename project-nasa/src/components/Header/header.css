@@ -1,0 +1,63 @@
+header {
+  background-color: rgb(25, 26, 83);
+  height: 120px;
+  padding: 8px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  float: left;
+  position: relative;
+  left: -10%;
+  top: 45px;
+  z-index: 10;
+}
+
+p {
+  flex: 2;
+  font-size: 50px;
+  font-family: tahoma;
+  font-style: bold;
+  box-shadow: 2px solid;
+  color: #FFF;
+}
+
+span {
+  color: white;
+  font-size: 20px;
+  text-decoration: bold;
+}
+
+h3 {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 20px;
+}
+
+.itens {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.subItens {
+  justify-content: space-between;
+  display: flex;
+  width: 500px;
+  margin: 10px;
+}
+
+.Link {
+  color: antiquewhite;
+  text-decoration: none;
+}
