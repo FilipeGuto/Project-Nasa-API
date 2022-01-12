@@ -8,6 +8,7 @@ function Desenvolvedor() {
 
   useEffect(() => {
     fetchApi(searchText);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function fetchApi(text) {
