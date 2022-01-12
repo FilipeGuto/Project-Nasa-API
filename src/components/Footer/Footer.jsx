@@ -11,13 +11,13 @@ export default function Footer() {
           href='https://github.com/FilipeGuto' 
           target='_blank' rel="noreferrer"
           >
-            <i class="fab fa-github fa-3x"></i>
+            <i className="fab fa-github fa-3x"></i>
           </a>
           <a 
           href="https://www.linkedin.com/in/filipeguto/"
           target="_blank" rel="noreferrer"
           >
-            <i class="fab fa-linkedin-in fa-3x"></i>
+            <i className="fab fa-linkedin-in fa-3x"></i>
           </a>
         </div>
         <div className='social'>

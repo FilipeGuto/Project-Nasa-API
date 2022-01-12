@@ -17,7 +17,11 @@ function PictureDay() {
     fetchApi();
   }, [])
 
-  if(!data) return(<div />);
+  if(!data) return (
+    <div>
+      <img className="logo" src="./images/nasa.png" alt="NASA" />
+    </div>
+    );
 
   return (
     <>

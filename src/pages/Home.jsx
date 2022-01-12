@@ -4,7 +4,6 @@ import '../css/basic.css'
 
 
 function Home() {
-
   return (
     <>
       <Header />
