@@ -1,7 +1,5 @@
-footer {
-  background-image: url('../../../public/images/Galaxy.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.FooterHome {
+  background-color: transparent;
   width: 100%;
   height: 60px;
   position: fixed;

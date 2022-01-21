@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import '../css/basic.css'
-
+import "../css/basic.css";
 
 function PictureDay() {
-  const url = 'https://api.nasa.gov/planetary/apod?api_key=3kWEV8WjbLfMhXstgJXz8Cb5Bv9TwMNn6LFQa8Ne';
+  const url =
+    "https://api.nasa.gov/planetary/apod?api_key=3kWEV8WjbLfMhXstgJXz8Cb5Bv9TwMNn6LFQa8Ne";
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -15,34 +15,33 @@ function PictureDay() {
       setData(result);
     }
     fetchApi();
-  }, [])
+  }, []);
 
-  if(!data) return (
-    <div>
-      <img className="logo" src="./images/nasa.png" alt="NASA" />
-    </div>
+  if (!data)
+    return (
+      <div className="gifDiv">
+        <img className="gif" src="./images/GifNasa.gif" alt="NASA" />
+      </div>
     );
 
   return (
-    <>
+    <div className="page2">
       <Header />
-      <main>
-        <h2>{ data.title }</h2>
-        <h3>{ data.date }</h3>
-        <section>
-          { data.media_type === 'image' ?
-          <img src={ data.url } alt={ data.title } />
-          :
-          <iframe src={ data.url } title={ data.title }/>
-          }
-          <p>{ data.explanation }</p>
-        </section>
-        <p>
-        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-        </p>
-      </main>
+      <div className="title"></div>
+      <div className="media">
+        {data.media_type === "image" ? (
+          <img src={data.url} alt={data.title} className="imgDay" />
+        ) : (
+          <iframe src={data.url} title={data.title} className="imgDay" />
+        )}
+      </div>
+      <div className="description">
+        <h1 className="titleDay">{data.title}</h1>
+        <h2 className="dateDay">{data.date}</h2>
+        <p>{data.explanation}</p>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

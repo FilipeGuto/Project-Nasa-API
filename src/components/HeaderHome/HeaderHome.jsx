@@ -1,30 +1,30 @@
 import React from "react";
-import "./header.css";
+import "./HeaderHome.css";
 import "../../css/basic.css";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function HeaderHome() {
   return (
     <>
-      <header>
-        <img className="logo" src="./images/nasa.png" alt="NASA" />
-        <div className="itens">
-          <div className="subItens">
+      <header className="headerHome">
+        <img className="logoHome" src="./images/nasa.png" alt="NASA" />
+        <div className="itensHome">
+          <div className="subItensHome">
           <span>|</span>
             <h3>
-              <Link to="/" className="Link">
+              <Link to="/" className="LinkHome">
                 SPACE
               </Link>
             </h3>
             <span>|</span>
             <h3>
-              <Link to="/Picture-Day" className="Link">
+              <Link to="/Picture-Day" className="LinkHome">
                 PICTURE DAY
               </Link>
             </h3>
             <span>|</span>
             <h3>
-              <Link to="/Search" className="Link">
+              <Link to="/Search" className="LinkHome">
                 SEARCH
               </Link>
             </h3>

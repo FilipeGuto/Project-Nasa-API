@@ -1,7 +1,5 @@
-header {
-  background-image: url('../../../public/images/Galaxy.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.headerHome {
+  background-color: transparent;
   height: 120px;
   padding: 8px;
   text-align: center;
@@ -13,7 +11,7 @@ header {
   align-items: center;
 }
 
-.logo {
+.logoHome {
   width: 150px;
   float: left;
   position: relative;
@@ -45,21 +43,21 @@ h3 {
   font-size: 20px;
 }
 
-.itens {
+.itensHome {
   flex-direction: column;
   text-align: center;
   justify-content: center;
   margin-right: 100px;
 }
 
-.subItens {
+.subItensHome {
   justify-content: space-between;
   display: flex;
   width: 500px;
   margin: 10px;
 }
 
-.Link {
+.LinkHome {
   color: antiquewhite;
   text-decoration: none;
 }

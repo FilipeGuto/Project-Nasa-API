@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-function Desenvolvedor() {
+function Search() {
   const [data, setData] = useState();
   const [searchText, setSearchText] = useState('planet earth');
 
@@ -10,6 +10,13 @@ function Desenvolvedor() {
     fetchApi(searchText);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  if (!data)
+    return (
+      <div className="gifDiv">
+        <img className="gif" src="./images/GifNasa.gif" alt="NASA" />
+      </div>
+    );
 
   async function fetchApi(text) {
     const response = await fetch(
@@ -32,7 +39,10 @@ function Desenvolvedor() {
     <>
       <Header />
       <main>
+        <section >
         <form>
+          <div
+            className="search" >
           <div>
             <label>
               <input
@@ -40,6 +50,7 @@ function Desenvolvedor() {
                 name="search"
                 type="text"
                 onChange={onChange}
+                placeholder="search in english"
               />
             </label>
           </div>
@@ -48,15 +59,16 @@ function Desenvolvedor() {
               SEARCH
             </button>
           </div>
+          </div>
         </form>
-        <section className="itemsSearch">
           {data.map(( item ) => {
-            console.log( item );
             return (
-            <div key={ Math.random() }>
-              {item.data && <h1>Titulo:{ item.data[0].title }</h1> }
+              <div className="itemsSearch">
+            <div key={ Math.random() } className="searchDiv">
+              {item.data && <h1>{ item.data[0].title }</h1> }
               {item.links && <img src={ item.links[0].href } alt={ 'foto' } />}
             </div>
+              </div>
             )
           })}
         </section>
@@ -66,4 +78,4 @@ function Desenvolvedor() {
   );
 }
 
-export default Desenvolvedor;
+export default Search;
